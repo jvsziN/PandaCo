@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panda Company</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/PandaCompany.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <section class="">
+        <nav class="container">
+            <div class="logo">
+                <img src="image/PandaCompany.png" alt="">
+            </div>
+
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#About">Sobre</a></li>
+                <li><a href="#Review">Reviews</a></li>
+                <li><a href="#Servises">Serviços</a></li>
+            </ul>
+
+            <div class="icons">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="span-cart">0</span>
+                <a href="#login"><i class="fa-solid fa-user"></i></a>
+            </div>
+
+        </nav>
+
+        <div class="main" id="Home">
+            <div class="main_content">
+                <div class="main_text">
+                    <h1>Nova<br><span>Coleção</span></h1>
+                    <p>
+                        O Zoom Structure é o modelo de estabilidade moderada mais utilizado por corredores que curtem os produtos da Nike. A 20ª edição foi lançada no Brasil no fim de setembro com algumas mudanças positivas em relação ao modelo anterior, cujo aspecto negativo era a alta rigidez da placa, deixando o tênis muito “duro” na aterrisagem e pouco confortável.
+                    </p>
+                </div>
+                <div class="main_image">
+                    <img src="image/shoes.png">
+                </div>
+            </div>
+            <div class="button">
+                <a href="#produtos">Saiba mais</a>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="carrinho">
+        <h3>Seu Carrinho</h3>
+        <ul class="listaProdutos"></ul>
+
+        <div class="checkout">
+            <div class="total">
+                <a href="https://link.mercadopago.com.br/tdegean"><small>Subtotal (0 itens)</small></a>R$0
+            </div>
+            <div class="fechar">FECHAR</div>
+        </div>
+    </div>
+    
+
+    <!--Produtos-->
+    <div class="produtos" id="produtos">
+        <h1>produtos</h1>
+        <div class="box"></div>
+    </div>
+
+
+
+    <!--About-->
+
+    <div class="about" id="About">
+        
+        <h1>NIKE<span>Revolution 5</span></h1>
+
+        <div class="about_main">
+            <div class="about_image">
+                <div class="about_small_image">
+                    <img src="image/red_shoes1.png" onclick="functio(this)">
+                    <img src="image/red_shoes2.png" onclick="functio(this)">
+                    <img src="image/red_shoes3.png" onclick="functio(this)">
+                    <img src="image/red_shoes4.png" onclick="functio(this)">
+                </div>
+
+                <div class="image_contaner">
+                    <img src="image/red_shoes1.png" id="imagebox">
+                </div>
+
+            </div>
+
+            <div class="about_text">
+                <p>
+                    Em sua versão renovada o Nike Revolution 5 apresenta uma proposta de estilo com design minimalista, fechamento dinâmico sem abrir mão do conforto e da performance para uso no treino ousuas atividades diárias.
+Cabedal sem costuras de ajuste personalizado composto por materiais leves e respiráveis e uma entressola em EVA com ótimo amortecimento formam um conjunto que proporciona conforto a cada passada.
+                </p>
+            </div>
+
+        </div>
+
+        <a href="#produtos" class="about_btn">Saiba mais</a>
+        
+    </div>
+
+
+
+    <!--Review-->
+
+    <div class="review" id="Review">
+        <h1>Review<span>dos Clientes</span></h1>
+        
+        <div class="review_box">
+            <div class="review_card">
+                <div class="card_top">
+                    <div class="profile">
+
+                        <div class="profile_image">
+                            <img src="image/userfoto1.jpg">
+                        </div>
+
+                        <div class="name">
+                            <strong>Lebron James</strong>
+
+                            <div class="like">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="comment">
+                    <p>
+                        Entrega rápida e tênis de ótima qualidade. Comprarei novamente!
+                    </p>
+                </div>
+            </div>   
+
+            <div class="review_card">
+                <div class="card_top">
+                    <div class="profile">
+
+                        <div class="profile_image">
+                            <img src="image/userfoto2.jpg">
+                        </div>
+
+                        <div class="name">
+                            <strong>Neymar</strong>
+
+                            <div class="like">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="comment">
+                    <p>
+                        Site fácil de navegar e excelente atendimento ao cliente. Recomendo!
+                    </p>
+                </div>
+            </div>   
+
+            <div class="review_card">
+                <div class="card_top">
+                    <div class="profile">
+
+                        <div class="profile_image">
+                            <img src="image/userfoto3.jpeg">
+                        </div>
+
+                        <div class="name">
+                            <strong>Naldo Benny</strong>
+
+                            <div class="like">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="comment">
+                    <p>
+                        Grande variedade de modelos e preços justos. Muito satisfeito com minha compra
+                    </p>
+                </div>
+            </div>   
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--Services-->
+
+    <div class="services" id="Servises">
+        <h1>Nossos<span>serviços</span></h1>
+
+        <div class="services_cards">
+            <div class="services_box">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>Entrega Rápida</h3>
+                <p>
+                    Entrega rápida e segura para todo o país.
+                </p>
+            </div>
+
+            <div class="services_box">
+                <i class="fa-solid fa-rotate-left"></i>
+                <h3>30 dias de Garantia</h3>
+                <p>
+                    Satisfação ou seu dinheiro de volta
+                </p>
+            </div>
+
+            <div class="services_box">
+                <i class="fa-solid fa-headset"></i>
+                <h3>Suporte 24h</h3>
+                <p>
+                    Suporte 24h via chat, e-mail e telefone
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!--Login Form-->
+    
+    <div class="login_form">
+        <div class="left" id="login">
+            <img src="image/logshoes.png">
+        </div>
+
+        <div class="right">
+            <h1>Bem vindo!</h1>
+
+            <form action="index.html" method="post">
+                <p>Usuario</p>
+                <div class="user">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="user" placeholder="Nome de Usuario" class="username">
+                </div>
+
+                <p class="passworg_tag">Senha</p>
+                <div class="password">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="text" name="password" placeholder="Senha">
+                </div>
+
+                <p class="forget">Esqueceu a senha?</p>
+
+                <button type="submit">Login</button>
+                <div class="loging_icon">
+                    <a href="https://www.google.com/"><img src="image/google.png"></a>
+                    <a href="https://www.facebook.com/"><img src="image/facebook.png"></a>
+                    <a href="https://www.x.com/"><img src="image/twitter.png"></a>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <!--Footer-->
+
+    <footer>
+        <div class="footer_main">
+            <div class="tag">
+                <h1>Contato</h1>
+                <a href="https://unifan.net.br/"><i class="fa-solid fa-house"></i>Unifan/Feira de Santana/Bahia</a>
+                <a href="https://wa.me/75999981397"><i class="fa-solid fa-phone"></i>(75)999983197</a>
+                <a href="mailto:contato@gmail.com"><i class="fa-solid fa-envelope"></i>contato@gmail.com</a>
+            </div>
+
+            <div class="tag">
+                <h1>Ajuda</h1>
+                <a href="#" class="center">Atendimento e Suporte</a>
+                <a href="#" class="center">Dúvidas Gerais</a>
+                <a href="#" class="center">Trocas e Devoluções</a>
+                <a href="#" class="center">Termos de Uso</a>
+            </div>
+
+            <div class="tag">
+                <h1>Sobre nós</h1>
+                <a href="#" class="center">Sobre Nós</a>
+                <a href="#" class="center">Cupons</a>
+            </div>
+
+            <div class="tag">
+                <h1>Redes Sociais</h1>
+                <div class="social_link">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.x.com/"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>                    
+                </div>
+            </div>
+
+            <div class="tag">
+                <h1>Notícias</h1>
+                <div class="search_bar">
+                    <input type="text" placeholder="Coloque seu e-mail aqui">
+                    <button type="submit">Inscreva-se</button>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
